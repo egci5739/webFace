@@ -1,0 +1,1148 @@
+2020-04-28 16:34:48 [main] INFO  com.face.nd.DemoApplication -Starting DemoApplication on EGCI with PID 10676 (H:\nd\webFace\target\classes started by EGCI in H:\nd\webFace)
+2020-04-28 16:34:48 [main] INFO  com.face.nd.DemoApplication -No active profile set, falling back to default profiles: default
+2020-04-28 16:34:51 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-04-28 16:34:51 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-28 16:34:51 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-28 16:34:51 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-28 16:34:51 [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-04-28 16:34:51 [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-04-28 16:34:51 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-28 16:34:51 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-28 16:34:52 [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-04-28 16:34:52 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-28 16:34:52 [main] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3458 ms
+2020-04-28 16:34:52 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoApplication': Unsatisfied dependency expressed through field 'egciController'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'egciController': Unsatisfied dependency expressed through field 'configService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'configService': Unsatisfied dependency expressed through field 'configDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.face.nd.dao.ConfigDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-04-28 16:34:52 [main] INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2020-04-28 16:34:52 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-28 16:34:52 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field configDao in com.face.nd.service.ConfigService required a bean of type 'com.face.nd.dao.ConfigDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.face.nd.dao.ConfigDao' in your configuration.
+
+2020-04-28 16:36:50 [main] INFO  com.face.nd.DemoApplication -Starting DemoApplication on EGCI with PID 5740 (H:\nd\webFace\target\classes started by EGCI in H:\nd\webFace)
+2020-04-28 16:36:50 [main] INFO  com.face.nd.DemoApplication -No active profile set, falling back to default profiles: default
+2020-04-28 16:36:51 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-04-28 16:36:51 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 66ms. Found 0 JDBC repository interfaces.
+2020-04-28 16:36:51 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-04-28 16:36:51 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-28 16:36:51 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-28 16:36:51 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-28 16:36:51 [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-04-28 16:36:51 [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-04-28 16:36:51 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-28 16:36:51 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-28 16:36:52 [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-04-28 16:36:53 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-28 16:36:53 [main] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2774 ms
+2020-04-28 16:36:53 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoApplication': Unsatisfied dependency expressed through field 'egciController'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'egciController': Unsatisfied dependency expressed through field 'synchronizationTimer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'synchronizationTimer': Unsatisfied dependency expressed through field 'synchronizationTaskService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'synchronizationTaskService': Unsatisfied dependency expressed through field 'synchronizationService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'synchronizationService' defined in file [H:\nd\webFace\target\classes\com\face\nd\service\SynchronizationService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.face.nd.service.SynchronizationService]: Constructor threw exception; nested exception is java.lang.UnsatisfiedLinkError: Unable to load library 'H:\nd\webFace\lib\HCNetSDK': ???????¨
+2020-04-28 16:36:53 [main] INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2020-04-28 16:36:53 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-28 16:36:53 [main] ERROR org.springframework.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoApplication': Unsatisfied dependency expressed through field 'egciController'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'egciController': Unsatisfied dependency expressed through field 'synchronizationTimer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'synchronizationTimer': Unsatisfied dependency expressed through field 'synchronizationTaskService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'synchronizationTaskService': Unsatisfied dependency expressed through field 'synchronizationService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'synchronizationService' defined in file [H:\nd\webFace\target\classes\com\face\nd\service\SynchronizationService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.face.nd.service.SynchronizationService]: Constructor threw exception; nested exception is java.lang.UnsatisfiedLinkError: Unable to load library 'H:\nd\webFace\lib\HCNetSDK': ???????¨
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.face.nd.DemoApplication.main(DemoApplication.java:22)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'egciController': Unsatisfied dependency expressed through field 'synchronizationTimer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'synchronizationTimer': Unsatisfied dependency expressed through field 'synchronizationTaskService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'synchronizationTaskService': Unsatisfied dependency expressed through field 'synchronizationService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'synchronizationService' defined in file [H:\nd\webFace\target\classes\com\face\nd\service\SynchronizationService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.face.nd.service.SynchronizationService]: Constructor threw exception; nested exception is java.lang.UnsatisfiedLinkError: Unable to load library 'H:\nd\webFace\lib\HCNetSDK': ???????¨
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'synchronizationTimer': Unsatisfied dependency expressed through field 'synchronizationTaskService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'synchronizationTaskService': Unsatisfied dependency expressed through field 'synchronizationService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'synchronizationService' defined in file [H:\nd\webFace\target\classes\com\face\nd\service\SynchronizationService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.face.nd.service.SynchronizationService]: Constructor threw exception; nested exception is java.lang.UnsatisfiedLinkError: Unable to load library 'H:\nd\webFace\lib\HCNetSDK': ???????¨
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'synchronizationTaskService': Unsatisfied dependency expressed through field 'synchronizationService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'synchronizationService' defined in file [H:\nd\webFace\target\classes\com\face\nd\service\SynchronizationService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.face.nd.service.SynchronizationService]: Constructor threw exception; nested exception is java.lang.UnsatisfiedLinkError: Unable to load library 'H:\nd\webFace\lib\HCNetSDK': ???????¨
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'synchronizationService' defined in file [H:\nd\webFace\target\classes\com\face\nd\service\SynchronizationService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.face.nd.service.SynchronizationService]: Constructor threw exception; nested exception is java.lang.UnsatisfiedLinkError: Unable to load library 'H:\nd\webFace\lib\HCNetSDK': ???????¨
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 58 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.face.nd.service.SynchronizationService]: Constructor threw exception; nested exception is java.lang.UnsatisfiedLinkError: Unable to load library 'H:\nd\webFace\lib\HCNetSDK': ???????¨
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 69 common frames omitted
+Caused by: java.lang.UnsatisfiedLinkError: Unable to load library 'H:\nd\webFace\lib\HCNetSDK': ???????¨
+	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:145)
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:188)
+	at com.sun.jna.Library$Handler.<init>(Library.java:123)
+	at com.sun.jna.Native.loadLibrary(Native.java:255)
+	at com.sun.jna.Native.loadLibrary(Native.java:241)
+	at com.face.nd.HCNetSDK.<clinit>(HCNetSDK.java:24)
+	at com.face.nd.service.SynchronizationService.<init>(SynchronizationService.java:33)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	... 71 common frames omitted
+2020-04-28 16:48:05 [main] INFO  com.face.nd.DemoApplication -Starting DemoApplication on EGCI with PID 14536 (H:\nd\webFace\target\classes started by EGCI in H:\nd\webFace)
+2020-04-28 16:48:05 [main] INFO  com.face.nd.DemoApplication -No active profile set, falling back to default profiles: default
+2020-04-28 16:48:06 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-04-28 16:48:06 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 61ms. Found 0 JDBC repository interfaces.
+2020-04-28 16:48:07 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-04-28 16:48:07 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-28 16:48:07 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-28 16:48:07 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-28 16:48:07 [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-04-28 16:48:07 [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-04-28 16:48:07 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-28 16:48:07 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-28 16:48:08 [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-04-28 16:48:08 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-28 16:48:08 [main] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2782 ms
+2020-04-28 16:48:09 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-28 16:48:09 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping -Adding welcome page template: index
+2020-04-28 16:48:09 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-28 16:48:09 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-28 16:48:09 [main] INFO  com.face.nd.DemoApplication -Started DemoApplication in 4.713 seconds (JVM running for 6.483)
+2020-04-28 16:48:09 [Thread-16] INFO  com.face.nd.controller.EgciController -H:\nd\webFace
+2020-04-28 16:48:09 [Thread-16] INFO  com.face.nd.controller.EgciController -进程id：14536
+2020-04-28 16:48:09 [Thread-16] INFO  com.face.nd.controller.EgciController -Runtime max: 1883242496 (1796.00 M)
+2020-04-28 16:48:09 [Thread-16] INFO  com.face.nd.controller.EgciController -Non-heap: -1 (-0.00 M)
+2020-04-28 16:48:09 [Thread-16] INFO  com.face.nd.controller.EgciController -Heap: 1883242496 (1796.00 M)
+2020-04-28 16:48:09 [Thread-16] INFO  com.face.nd.controller.EgciController -Pool: Code Cache (type Non-heap memory) = 251658240 (240.00 M)
+2020-04-28 16:48:09 [Thread-16] INFO  com.face.nd.controller.EgciController -Pool: Metaspace (type Non-heap memory) = -1 (-0.00 M)
+2020-04-28 16:48:09 [Thread-16] INFO  com.face.nd.controller.EgciController -Pool: Compressed Class Space (type Non-heap memory) = 1073741824 (1024.00 M)
+2020-04-28 16:48:09 [Thread-16] INFO  com.face.nd.controller.EgciController -Pool: PS Eden Space (type Heap memory) = 684720128 (653.00 M)
+2020-04-28 16:48:09 [Thread-16] INFO  com.face.nd.controller.EgciController -Pool: PS Survivor Space (type Heap memory) = 9961472 (9.50 M)
+2020-04-28 16:48:09 [Thread-16] INFO  com.face.nd.controller.EgciController -Pool: PS Old Gen (type Heap memory) = 1412431872 (1347.00 M)
+2020-04-28 16:48:09 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Starting...
+2020-04-28 16:48:10 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Start completed.
+2020-04-28 16:48:11 [Thread-16] INFO  com.face.nd.service.EquipmentService -设备信息:一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 16:48:11 [Thread-16] INFO  com.face.nd.service.EquipmentService -设备信息:15-192.168.1.4
+2020-04-28 16:48:11 [Thread-16] INFO  com.face.nd.service.EquipmentService -数量：2
+2020-04-28 16:48:11 [Thread-11] INFO  com.face.nd.service.EquipmentStatusService -开始查询设备状态Tue Apr 28 16:48:11 CST 2020
+2020-04-28 16:48:11 [Thread-11] INFO  com.face.nd.service.EquipmentStatusService -正在查询：1 个 15-192.168.1.4
+2020-04-28 16:48:15 [Thread-16] INFO  com.face.nd.controller.EgciController -第 1 个192.168.1.4：获取网络状态成功
+2020-04-28 16:48:16 [Thread-11] INFO  com.face.nd.service.EquipmentStatusService -已查询第：1 个 15-192.168.1.4
+2020-04-28 16:48:16 [Thread-11] INFO  com.face.nd.service.EquipmentStatusService -正在查询：2 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 16:48:19 [Thread-16] INFO  com.face.nd.controller.EgciController -第 2 个192.168.1.116：获取网络状态成功
+2020-04-28 16:48:19 [Thread-16] INFO  com.face.nd.timer.AlarmTimer -启用布防自动重连功能
+2020-04-28 16:48:19 [Thread-16] INFO  com.face.nd.timer.SynchronizationTimer -夜间同步时间：Tue Apr 28 12:56:00 CST 2020
+2020-04-28 16:48:19 [Thread-16] INFO  com.face.nd.controller.EgciController -开启自动同步功能
+2020-04-28 16:48:19 [Thread-16] INFO  com.face.nd.timer.SystemResetTimer -系统重置时间：Tue Apr 28 11:56:00 CST 2020
+2020-04-28 16:48:19 [Thread-16] INFO  com.face.nd.controller.EgciController -系统默认编码：GBK
+2020-04-28 16:48:19 [Thread-16] INFO  com.face.nd.controller.EgciController -系统默认字符编码：GBK
+2020-04-28 16:48:19 [Thread-16] INFO  com.face.nd.controller.EgciController -系统默认语言：zh
+2020-04-28 16:48:19 [Thread-16] INFO  com.face.nd.controller.EgciController -本机IP地址EGCI/192.168.1.6
+2020-04-28 16:48:19 [Thread-16] INFO  com.face.nd.controller.EgciController -等待客户端连接..............................................................................
+2020-04-28 16:48:21 [Thread-11] INFO  com.face.nd.service.EquipmentStatusService -已查询第：2 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 16:48:21 [Thread-11] INFO  com.face.nd.service.EquipmentStatusService -结束查询设备状态Tue Apr 28 16:48:21 CST 2020
+2020-04-28 16:48:22 [Thread-27] INFO  com.face.nd.timer.PingTimer -192.168.1.4:启用自动更新设备网络状态
+2020-04-28 16:48:24 [Thread-28] INFO  com.face.nd.timer.PingTimer -192.168.1.116:启用自动更新设备网络状态
+2020-04-28 16:53:19 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-28 16:53:19 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-28 16:53:19 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 5 ms
+2020-04-28 16:55:01 [main] INFO  com.face.nd.DemoApplication -Starting DemoApplication on EGCI with PID 7916 (H:\nd\webFace\target\classes started by EGCI in H:\nd\webFace)
+2020-04-28 16:55:01 [main] INFO  com.face.nd.DemoApplication -No active profile set, falling back to default profiles: default
+2020-04-28 16:55:02 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-04-28 16:55:02 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 39ms. Found 0 JDBC repository interfaces.
+2020-04-28 16:55:03 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-04-28 16:55:03 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-28 16:55:03 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-28 16:55:03 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-28 16:55:03 [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-04-28 16:55:03 [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-04-28 16:55:03 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-28 16:55:03 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-28 16:55:04 [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-04-28 16:55:04 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-28 16:55:04 [main] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2642 ms
+2020-04-28 16:55:04 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-28 16:55:04 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping -Adding welcome page template: index
+2020-04-28 16:55:05 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-28 16:55:05 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-28 16:55:05 [main] INFO  com.face.nd.DemoApplication -Started DemoApplication in 4.16 seconds (JVM running for 5.802)
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.controller.EgciController -H:\nd\webFace
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.controller.EgciController -进程id：7916
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.controller.EgciController -Runtime max: 1883242496 (1796.00 M)
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.controller.EgciController -Non-heap: -1 (-0.00 M)
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.controller.EgciController -Heap: 1883242496 (1796.00 M)
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: Code Cache (type Non-heap memory) = 251658240 (240.00 M)
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: Metaspace (type Non-heap memory) = -1 (-0.00 M)
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: Compressed Class Space (type Non-heap memory) = 1073741824 (1024.00 M)
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: PS Eden Space (type Heap memory) = 684720128 (653.00 M)
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: PS Survivor Space (type Heap memory) = 9961472 (9.50 M)
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: PS Old Gen (type Heap memory) = 1412431872 (1347.00 M)
+2020-04-28 16:55:05 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Starting...
+2020-04-28 16:55:05 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Start completed.
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.service.EquipmentService -设备信息:一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.service.EquipmentService -设备信息:15-192.168.1.4
+2020-04-28 16:55:05 [Thread-15] INFO  com.face.nd.service.EquipmentService -数量：2
+2020-04-28 16:55:05 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -开始查询设备状态Tue Apr 28 16:55:05 CST 2020
+2020-04-28 16:55:05 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -正在查询：1 个 15-192.168.1.4
+2020-04-28 16:55:07 [Thread-15] INFO  com.face.nd.controller.EgciController -第 1 个192.168.1.4：获取网络状态成功
+2020-04-28 16:55:08 [Thread-15] INFO  com.face.nd.controller.EgciController -第 2 个192.168.1.116：获取网络状态成功
+2020-04-28 16:55:08 [Thread-15] INFO  com.face.nd.timer.AlarmTimer -启用布防自动重连功能
+2020-04-28 16:55:08 [Thread-15] INFO  com.face.nd.timer.SynchronizationTimer -夜间同步时间：Tue Apr 28 12:56:00 CST 2020
+2020-04-28 16:55:08 [Thread-15] INFO  com.face.nd.controller.EgciController -开启自动同步功能
+2020-04-28 16:55:08 [Thread-15] INFO  com.face.nd.timer.SystemResetTimer -系统重置时间：Tue Apr 28 11:56:00 CST 2020
+2020-04-28 16:55:08 [Thread-15] INFO  com.face.nd.controller.EgciController -系统默认编码：GBK
+2020-04-28 16:55:08 [Thread-15] INFO  com.face.nd.controller.EgciController -系统默认字符编码：GBK
+2020-04-28 16:55:08 [Thread-15] INFO  com.face.nd.controller.EgciController -系统默认语言：zh
+2020-04-28 16:55:08 [Thread-15] INFO  com.face.nd.controller.EgciController -本机IP地址EGCI/192.168.1.6
+2020-04-28 16:55:08 [Thread-15] INFO  com.face.nd.controller.EgciController -等待客户端连接..............................................................................
+2020-04-28 16:55:08 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-28 16:55:08 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-28 16:55:08 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 11 ms
+2020-04-28 16:55:12 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -已查询第：1 个 15-192.168.1.4
+2020-04-28 16:55:12 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -正在查询：2 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 16:55:17 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -已查询第：2 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 16:55:17 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -结束查询设备状态Tue Apr 28 16:55:17 CST 2020
+2020-04-28 16:55:19 [Thread-26] INFO  com.face.nd.timer.PingTimer -192.168.1.4:启用自动更新设备网络状态
+2020-04-28 16:55:20 [Thread-27] INFO  com.face.nd.timer.PingTimer -192.168.1.116:启用自动更新设备网络状态
+2020-04-28 16:57:47 [main] INFO  com.face.nd.DemoApplication -Starting DemoApplication on EGCI with PID 14064 (H:\nd\webFace\target\classes started by EGCI in H:\nd\webFace)
+2020-04-28 16:57:47 [main] INFO  com.face.nd.DemoApplication -No active profile set, falling back to default profiles: default
+2020-04-28 16:57:48 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-04-28 16:57:48 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 53ms. Found 0 JDBC repository interfaces.
+2020-04-28 16:57:49 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-04-28 16:57:49 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-28 16:57:49 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-28 16:57:49 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-28 16:57:49 [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-04-28 16:57:49 [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-04-28 16:57:49 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-28 16:57:49 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-28 16:57:50 [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-04-28 16:57:50 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-28 16:57:50 [main] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2702 ms
+2020-04-28 16:57:51 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-28 16:57:51 [main] WARN  org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration -Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-04-28 16:57:51 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-28 16:57:51 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-28 16:57:51 [main] INFO  com.face.nd.DemoApplication -Started DemoApplication in 4.151 seconds (JVM running for 5.602)
+2020-04-28 16:57:51 [Thread-15] INFO  com.face.nd.controller.EgciController -H:\nd\webFace
+2020-04-28 16:57:51 [Thread-15] INFO  com.face.nd.controller.EgciController -进程id：14064
+2020-04-28 16:57:51 [Thread-15] INFO  com.face.nd.controller.EgciController -Runtime max: 1883242496 (1796.00 M)
+2020-04-28 16:57:51 [Thread-15] INFO  com.face.nd.controller.EgciController -Non-heap: -1 (-0.00 M)
+2020-04-28 16:57:51 [Thread-15] INFO  com.face.nd.controller.EgciController -Heap: 1883242496 (1796.00 M)
+2020-04-28 16:57:51 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: Code Cache (type Non-heap memory) = 251658240 (240.00 M)
+2020-04-28 16:57:51 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: Metaspace (type Non-heap memory) = -1 (-0.00 M)
+2020-04-28 16:57:51 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: Compressed Class Space (type Non-heap memory) = 1073741824 (1024.00 M)
+2020-04-28 16:57:51 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: PS Eden Space (type Heap memory) = 684720128 (653.00 M)
+2020-04-28 16:57:51 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: PS Survivor Space (type Heap memory) = 9961472 (9.50 M)
+2020-04-28 16:57:51 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: PS Old Gen (type Heap memory) = 1412431872 (1347.00 M)
+2020-04-28 16:57:51 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Starting...
+2020-04-28 16:57:52 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Start completed.
+2020-04-28 16:57:52 [Thread-15] INFO  com.face.nd.service.EquipmentService -设备信息:一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 16:57:52 [Thread-15] INFO  com.face.nd.service.EquipmentService -设备信息:15-192.168.1.4
+2020-04-28 16:57:52 [Thread-15] INFO  com.face.nd.service.EquipmentService -数量：2
+2020-04-28 16:57:52 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -开始查询设备状态Tue Apr 28 16:57:52 CST 2020
+2020-04-28 16:57:52 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -正在查询：1 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 16:57:56 [Thread-15] INFO  com.face.nd.controller.EgciController -第 1 个192.168.1.116：获取网络状态成功
+2020-04-28 16:57:57 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -已查询第：1 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 16:57:57 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -正在查询：2 个 15-192.168.1.4
+2020-04-28 16:58:00 [Thread-15] INFO  com.face.nd.controller.EgciController -第 2 个192.168.1.4：获取网络状态成功
+2020-04-28 16:58:00 [Thread-15] INFO  com.face.nd.timer.AlarmTimer -启用布防自动重连功能
+2020-04-28 16:58:00 [Thread-15] INFO  com.face.nd.timer.SynchronizationTimer -夜间同步时间：Tue Apr 28 12:56:00 CST 2020
+2020-04-28 16:58:00 [Thread-15] INFO  com.face.nd.controller.EgciController -开启自动同步功能
+2020-04-28 16:58:00 [Thread-15] INFO  com.face.nd.timer.SystemResetTimer -系统重置时间：Tue Apr 28 11:56:00 CST 2020
+2020-04-28 16:58:00 [Thread-15] INFO  com.face.nd.controller.EgciController -系统默认编码：GBK
+2020-04-28 16:58:00 [Thread-15] INFO  com.face.nd.controller.EgciController -系统默认字符编码：GBK
+2020-04-28 16:58:00 [Thread-15] INFO  com.face.nd.controller.EgciController -系统默认语言：zh
+2020-04-28 16:58:00 [Thread-15] INFO  com.face.nd.controller.EgciController -本机IP地址EGCI/192.168.1.6
+2020-04-28 16:58:00 [Thread-15] INFO  com.face.nd.controller.EgciController -等待客户端连接..............................................................................
+2020-04-28 16:58:01 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -已查询第：2 个 15-192.168.1.4
+2020-04-28 16:58:01 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -结束查询设备状态Tue Apr 28 16:58:01 CST 2020
+2020-04-28 16:58:02 [Thread-26] INFO  com.face.nd.timer.PingTimer -192.168.1.116:启用自动更新设备网络状态
+2020-04-28 16:58:04 [Thread-27] INFO  com.face.nd.timer.PingTimer -192.168.1.4:启用自动更新设备网络状态
+2020-04-28 16:58:28 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-28 16:58:28 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-28 16:58:28 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 11 ms
+2020-04-28 16:58:28 [http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine -[THYMELEAF][http-nio-8080-exec-1] Exception processing template "/index": Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-28 16:58:28 [http-nio-8080-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-28 16:58:39 [http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine -[THYMELEAF][http-nio-8080-exec-3] Exception processing template "/index": Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-28 16:58:39 [http-nio-8080-exec-3] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-28 16:58:49 [http-nio-8080-exec-4] ERROR org.thymeleaf.TemplateEngine -[THYMELEAF][http-nio-8080-exec-4] Exception processing template "/index": Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-28 16:58:49 [http-nio-8080-exec-4] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-28 16:59:21 [http-nio-8080-exec-7] ERROR org.thymeleaf.TemplateEngine -[THYMELEAF][http-nio-8080-exec-7] Exception processing template "/index": Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-28 16:59:21 [http-nio-8080-exec-7] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-28 17:03:24 [main] INFO  com.face.nd.DemoApplication -Starting DemoApplication on EGCI with PID 8572 (H:\nd\webFace\target\classes started by EGCI in H:\nd\webFace)
+2020-04-28 17:03:24 [main] INFO  com.face.nd.DemoApplication -No active profile set, falling back to default profiles: default
+2020-04-28 17:03:25 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-04-28 17:03:25 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 39ms. Found 0 JDBC repository interfaces.
+2020-04-28 17:03:25 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-04-28 17:03:25 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-28 17:03:25 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-28 17:03:25 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-28 17:03:25 [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-04-28 17:03:25 [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-04-28 17:03:25 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-28 17:03:25 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-28 17:03:26 [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-04-28 17:03:27 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-28 17:03:27 [main] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2484 ms
+2020-04-28 17:03:27 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-28 17:03:27 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping -Adding welcome page template: index
+2020-04-28 17:03:28 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-28 17:03:28 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-28 17:03:28 [main] INFO  com.face.nd.DemoApplication -Started DemoApplication in 4.211 seconds (JVM running for 5.93)
+2020-04-28 17:03:28 [Thread-15] INFO  com.face.nd.controller.EgciController -H:\nd\webFace
+2020-04-28 17:03:28 [Thread-15] INFO  com.face.nd.controller.EgciController -进程id：8572
+2020-04-28 17:03:28 [Thread-15] INFO  com.face.nd.controller.EgciController -Runtime max: 1883242496 (1796.00 M)
+2020-04-28 17:03:28 [Thread-15] INFO  com.face.nd.controller.EgciController -Non-heap: -1 (-0.00 M)
+2020-04-28 17:03:28 [Thread-15] INFO  com.face.nd.controller.EgciController -Heap: 1883242496 (1796.00 M)
+2020-04-28 17:03:28 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: Code Cache (type Non-heap memory) = 251658240 (240.00 M)
+2020-04-28 17:03:28 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: Metaspace (type Non-heap memory) = -1 (-0.00 M)
+2020-04-28 17:03:28 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: Compressed Class Space (type Non-heap memory) = 1073741824 (1024.00 M)
+2020-04-28 17:03:28 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: PS Eden Space (type Heap memory) = 684720128 (653.00 M)
+2020-04-28 17:03:28 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: PS Survivor Space (type Heap memory) = 9961472 (9.50 M)
+2020-04-28 17:03:28 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: PS Old Gen (type Heap memory) = 1412431872 (1347.00 M)
+2020-04-28 17:03:28 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Starting...
+2020-04-28 17:03:28 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Start completed.
+2020-04-28 17:03:29 [Thread-15] INFO  com.face.nd.service.EquipmentService -设备信息:一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:03:29 [Thread-15] INFO  com.face.nd.service.EquipmentService -设备信息:15-192.168.1.4
+2020-04-28 17:03:29 [Thread-15] INFO  com.face.nd.service.EquipmentService -数量：2
+2020-04-28 17:03:29 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -开始查询设备状态Tue Apr 28 17:03:29 CST 2020
+2020-04-28 17:03:29 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -正在查询：1 个 15-192.168.1.4
+2020-04-28 17:03:33 [Thread-15] INFO  com.face.nd.controller.EgciController -第 1 个192.168.1.4：获取网络状态成功
+2020-04-28 17:03:34 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -已查询第：1 个 15-192.168.1.4
+2020-04-28 17:03:34 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -正在查询：2 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:03:37 [Thread-15] INFO  com.face.nd.controller.EgciController -第 2 个192.168.1.116：获取网络状态成功
+2020-04-28 17:03:37 [Thread-15] INFO  com.face.nd.timer.AlarmTimer -启用布防自动重连功能
+2020-04-28 17:03:37 [Thread-15] INFO  com.face.nd.timer.SynchronizationTimer -夜间同步时间：Tue Apr 28 12:56:00 CST 2020
+2020-04-28 17:03:37 [Thread-15] INFO  com.face.nd.controller.EgciController -开启自动同步功能
+2020-04-28 17:03:37 [Thread-15] INFO  com.face.nd.timer.SystemResetTimer -系统重置时间：Tue Apr 28 11:56:00 CST 2020
+2020-04-28 17:03:37 [Thread-15] INFO  com.face.nd.controller.EgciController -系统默认编码：GBK
+2020-04-28 17:03:37 [Thread-15] INFO  com.face.nd.controller.EgciController -系统默认字符编码：GBK
+2020-04-28 17:03:37 [Thread-15] INFO  com.face.nd.controller.EgciController -系统默认语言：zh
+2020-04-28 17:03:37 [Thread-15] INFO  com.face.nd.controller.EgciController -本机IP地址EGCI/192.168.1.6
+2020-04-28 17:03:37 [Thread-15] INFO  com.face.nd.controller.EgciController -等待客户端连接..............................................................................
+2020-04-28 17:03:38 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -已查询第：2 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:03:38 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -结束查询设备状态Tue Apr 28 17:03:38 CST 2020
+2020-04-28 17:03:39 [Thread-26] INFO  com.face.nd.timer.PingTimer -192.168.1.4:启用自动更新设备网络状态
+2020-04-28 17:03:41 [Thread-27] INFO  com.face.nd.timer.PingTimer -192.168.1.116:启用自动更新设备网络状态
+2020-04-28 17:03:46 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-28 17:03:46 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-28 17:03:46 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 10 ms
+2020-04-28 17:08:03 [main] INFO  com.face.nd.DemoApplication -Starting DemoApplication on EGCI with PID 9864 (H:\nd\webFace\target\classes started by EGCI in H:\nd\webFace)
+2020-04-28 17:08:03 [main] INFO  com.face.nd.DemoApplication -No active profile set, falling back to default profiles: default
+2020-04-28 17:08:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-04-28 17:08:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 39ms. Found 0 JDBC repository interfaces.
+2020-04-28 17:08:05 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-04-28 17:08:05 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-28 17:08:05 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-28 17:08:05 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-28 17:08:05 [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-04-28 17:08:05 [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-04-28 17:08:05 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-28 17:08:05 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-28 17:08:06 [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-04-28 17:08:06 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-28 17:08:06 [main] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2491 ms
+2020-04-28 17:08:07 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-28 17:08:07 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping -Adding welcome page template: index
+2020-04-28 17:08:07 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-28 17:08:07 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-28 17:08:07 [main] INFO  com.face.nd.DemoApplication -Started DemoApplication in 4.079 seconds (JVM running for 5.854)
+2020-04-28 17:08:07 [Thread-15] INFO  com.face.nd.controller.EgciController -H:\nd\webFace
+2020-04-28 17:08:07 [Thread-15] INFO  com.face.nd.controller.EgciController -进程id：9864
+2020-04-28 17:08:07 [Thread-15] INFO  com.face.nd.controller.EgciController -Runtime max: 1883242496 (1796.00 M)
+2020-04-28 17:08:07 [Thread-15] INFO  com.face.nd.controller.EgciController -Non-heap: -1 (-0.00 M)
+2020-04-28 17:08:07 [Thread-15] INFO  com.face.nd.controller.EgciController -Heap: 1883242496 (1796.00 M)
+2020-04-28 17:08:07 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: Code Cache (type Non-heap memory) = 251658240 (240.00 M)
+2020-04-28 17:08:07 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: Metaspace (type Non-heap memory) = -1 (-0.00 M)
+2020-04-28 17:08:07 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: Compressed Class Space (type Non-heap memory) = 1073741824 (1024.00 M)
+2020-04-28 17:08:07 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: PS Eden Space (type Heap memory) = 684720128 (653.00 M)
+2020-04-28 17:08:07 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: PS Survivor Space (type Heap memory) = 9961472 (9.50 M)
+2020-04-28 17:08:07 [Thread-15] INFO  com.face.nd.controller.EgciController -Pool: PS Old Gen (type Heap memory) = 1412431872 (1347.00 M)
+2020-04-28 17:08:07 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Starting...
+2020-04-28 17:08:08 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Start completed.
+2020-04-28 17:08:08 [Thread-15] INFO  com.face.nd.service.EquipmentService -设备信息:一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:08:08 [Thread-15] INFO  com.face.nd.service.EquipmentService -设备信息:15-192.168.1.4
+2020-04-28 17:08:08 [Thread-15] INFO  com.face.nd.service.EquipmentService -数量：2
+2020-04-28 17:08:08 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -开始查询设备状态Tue Apr 28 17:08:08 CST 2020
+2020-04-28 17:08:08 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -正在查询：1 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:08:11 [Thread-15] INFO  com.face.nd.controller.EgciController -第 1 个192.168.1.116：获取网络状态成功
+2020-04-28 17:08:14 [Thread-15] INFO  com.face.nd.controller.EgciController -第 2 个192.168.1.4：获取网络状态成功
+2020-04-28 17:08:14 [Thread-15] INFO  com.face.nd.timer.AlarmTimer -启用布防自动重连功能
+2020-04-28 17:08:14 [Thread-15] INFO  com.face.nd.timer.SynchronizationTimer -夜间同步时间：Tue Apr 28 12:56:00 CST 2020
+2020-04-28 17:08:14 [Thread-15] INFO  com.face.nd.controller.EgciController -开启自动同步功能
+2020-04-28 17:08:14 [Thread-15] INFO  com.face.nd.timer.SystemResetTimer -系统重置时间：Tue Apr 28 11:56:00 CST 2020
+2020-04-28 17:08:14 [Thread-15] INFO  com.face.nd.controller.EgciController -系统默认编码：GBK
+2020-04-28 17:08:14 [Thread-15] INFO  com.face.nd.controller.EgciController -系统默认字符编码：GBK
+2020-04-28 17:08:14 [Thread-15] INFO  com.face.nd.controller.EgciController -系统默认语言：zh
+2020-04-28 17:08:14 [Thread-15] INFO  com.face.nd.controller.EgciController -本机IP地址EGCI/192.168.1.6
+2020-04-28 17:08:14 [Thread-15] INFO  com.face.nd.controller.EgciController -等待客户端连接..............................................................................
+2020-04-28 17:08:15 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -已查询第：1 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:08:15 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -正在查询：2 个 15-192.168.1.4
+2020-04-28 17:08:20 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -已查询第：2 个 15-192.168.1.4
+2020-04-28 17:08:20 [Thread-10] INFO  com.face.nd.service.EquipmentStatusService -结束查询设备状态Tue Apr 28 17:08:20 CST 2020
+2020-04-28 17:08:21 [Thread-26] INFO  com.face.nd.timer.PingTimer -192.168.1.116:启用自动更新设备网络状态
+2020-04-28 17:08:23 [Thread-27] INFO  com.face.nd.timer.PingTimer -192.168.1.4:启用自动更新设备网络状态
+2020-04-28 17:08:36 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-28 17:08:36 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-28 17:08:36 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 10 ms
+2020-04-28 17:16:14 [Timer-2] INFO  com.face.nd.service.NTPTimeSynchronizationService -192.168.29.35
+2020-04-28 17:16:17 [Timer-2] INFO  com.face.nd.service.NTPTimeSynchronizationService -时间：2020-04-28 17:16:17
+2020-04-28 17:16:17 [Timer-2] INFO  com.face.nd.service.NTPTimeSynchronizationService -同步成功
+2020-04-28 17:31:00 [main] INFO  com.face.nd.DemoApplication -Starting DemoApplication on EGCI with PID 1360 (H:\nd\webFace\target\classes started by EGCI in H:\nd\webFace)
+2020-04-28 17:31:00 [main] INFO  com.face.nd.DemoApplication -No active profile set, falling back to default profiles: default
+2020-04-28 17:31:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-04-28 17:31:01 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 69ms. Found 0 JDBC repository interfaces.
+2020-04-28 17:31:02 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-04-28 17:31:02 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-28 17:31:02 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-28 17:31:02 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-28 17:31:02 [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-04-28 17:31:02 [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-04-28 17:31:02 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-28 17:31:02 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-28 17:31:03 [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-04-28 17:31:03 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-28 17:31:03 [main] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3047 ms
+2020-04-28 17:31:04 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-28 17:31:04 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping -Adding welcome page template: index
+2020-04-28 17:31:04 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-28 17:31:04 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-28 17:31:04 [main] INFO  com.face.nd.DemoApplication -Started DemoApplication in 4.939 seconds (JVM running for 6.986)
+2020-04-28 17:31:04 [Thread-14] INFO  com.face.nd.controller.EgciController -H:\nd\webFace
+2020-04-28 17:31:04 [Thread-14] INFO  com.face.nd.controller.EgciController -进程id：1360
+2020-04-28 17:31:04 [Thread-14] INFO  com.face.nd.controller.EgciController -Runtime max: 1883242496 (1796.00 M)
+2020-04-28 17:31:04 [Thread-14] INFO  com.face.nd.controller.EgciController -Non-heap: -1 (-0.00 M)
+2020-04-28 17:31:04 [Thread-14] INFO  com.face.nd.controller.EgciController -Heap: 1883242496 (1796.00 M)
+2020-04-28 17:31:04 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: Code Cache (type Non-heap memory) = 251658240 (240.00 M)
+2020-04-28 17:31:04 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: Metaspace (type Non-heap memory) = -1 (-0.00 M)
+2020-04-28 17:31:04 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: Compressed Class Space (type Non-heap memory) = 1073741824 (1024.00 M)
+2020-04-28 17:31:04 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: PS Eden Space (type Heap memory) = 684720128 (653.00 M)
+2020-04-28 17:31:04 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: PS Survivor Space (type Heap memory) = 9961472 (9.50 M)
+2020-04-28 17:31:04 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: PS Old Gen (type Heap memory) = 1412431872 (1347.00 M)
+2020-04-28 17:31:04 [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Starting...
+2020-04-28 17:31:05 [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Start completed.
+2020-04-28 17:31:05 [Thread-14] INFO  com.face.nd.service.EquipmentService -设备信息:一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:31:05 [Thread-14] INFO  com.face.nd.service.EquipmentService -设备信息:15-192.168.1.4
+2020-04-28 17:31:05 [Thread-14] INFO  com.face.nd.service.EquipmentService -数量：2
+2020-04-28 17:31:05 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -开始查询设备状态Tue Apr 28 17:31:05 CST 2020
+2020-04-28 17:31:05 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -正在查询：1 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:31:08 [Thread-14] INFO  com.face.nd.controller.EgciController -第 1 个192.168.1.116：获取网络状态成功
+2020-04-28 17:31:11 [Thread-14] INFO  com.face.nd.controller.EgciController -第 2 个192.168.1.4：获取网络状态成功
+2020-04-28 17:31:11 [Thread-14] INFO  com.face.nd.timer.AlarmTimer -启用布防自动重连功能
+2020-04-28 17:31:11 [Thread-14] INFO  com.face.nd.timer.SynchronizationTimer -夜间同步时间：Tue Apr 28 12:56:00 CST 2020
+2020-04-28 17:31:11 [Thread-14] INFO  com.face.nd.controller.EgciController -开启自动同步功能
+2020-04-28 17:31:11 [Thread-14] INFO  com.face.nd.timer.SystemResetTimer -系统重置时间：Tue Apr 28 11:56:00 CST 2020
+2020-04-28 17:31:11 [Thread-14] INFO  com.face.nd.controller.EgciController -系统默认编码：GBK
+2020-04-28 17:31:11 [Thread-14] INFO  com.face.nd.controller.EgciController -系统默认字符编码：GBK
+2020-04-28 17:31:11 [Thread-14] INFO  com.face.nd.controller.EgciController -系统默认语言：zh
+2020-04-28 17:31:11 [Thread-14] INFO  com.face.nd.controller.EgciController -本机IP地址EGCI/192.168.1.6
+2020-04-28 17:31:11 [Thread-14] INFO  com.face.nd.controller.EgciController -等待客户端连接..............................................................................
+2020-04-28 17:31:12 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -已查询第：1 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:31:12 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -正在查询：2 个 15-192.168.1.4
+2020-04-28 17:31:17 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -已查询第：2 个 15-192.168.1.4
+2020-04-28 17:31:17 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -结束查询设备状态Tue Apr 28 17:31:17 CST 2020
+2020-04-28 17:31:19 [Thread-25] INFO  com.face.nd.timer.PingTimer -192.168.1.116:启用自动更新设备网络状态
+2020-04-28 17:31:20 [Thread-26] INFO  com.face.nd.timer.PingTimer -192.168.1.4:启用自动更新设备网络状态
+2020-04-28 17:31:41 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-28 17:31:41 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-28 17:31:41 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 8 ms
+2020-04-28 17:39:11 [Timer-2] INFO  com.face.nd.service.NTPTimeSynchronizationService -192.168.29.35
+2020-04-28 17:39:14 [Timer-2] INFO  com.face.nd.service.NTPTimeSynchronizationService -时间：2020-04-28 17:39:14
+2020-04-28 17:39:14 [Timer-2] INFO  com.face.nd.service.NTPTimeSynchronizationService -同步成功
+2020-04-28 17:46:10 [main] INFO  com.face.nd.DemoApplication -Starting DemoApplication on EGCI with PID 12944 (H:\nd\webFace\target\classes started by EGCI in H:\nd\webFace)
+2020-04-28 17:46:10 [main] INFO  com.face.nd.DemoApplication -No active profile set, falling back to default profiles: default
+2020-04-28 17:46:11 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-04-28 17:46:11 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 46ms. Found 0 JDBC repository interfaces.
+2020-04-28 17:46:11 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-04-28 17:46:11 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-28 17:46:11 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-28 17:46:11 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-28 17:46:11 [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-04-28 17:46:11 [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-04-28 17:46:11 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-28 17:46:11 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-28 17:46:12 [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-04-28 17:46:12 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-28 17:46:12 [main] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2547 ms
+2020-04-28 17:46:13 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-28 17:46:13 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping -Adding welcome page template: index
+2020-04-28 17:46:13 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-28 17:46:13 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-28 17:46:13 [main] INFO  com.face.nd.DemoApplication -Started DemoApplication in 4.108 seconds (JVM running for 5.973)
+2020-04-28 17:46:13 [Thread-14] INFO  com.face.nd.controller.EgciController -H:\nd\webFace
+2020-04-28 17:46:13 [Thread-14] INFO  com.face.nd.controller.EgciController -进程id：12944
+2020-04-28 17:46:13 [Thread-14] INFO  com.face.nd.controller.EgciController -Runtime max: 1883242496 (1796.00 M)
+2020-04-28 17:46:13 [Thread-14] INFO  com.face.nd.controller.EgciController -Non-heap: -1 (-0.00 M)
+2020-04-28 17:46:13 [Thread-14] INFO  com.face.nd.controller.EgciController -Heap: 1883242496 (1796.00 M)
+2020-04-28 17:46:13 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: Code Cache (type Non-heap memory) = 251658240 (240.00 M)
+2020-04-28 17:46:13 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: Metaspace (type Non-heap memory) = -1 (-0.00 M)
+2020-04-28 17:46:13 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: Compressed Class Space (type Non-heap memory) = 1073741824 (1024.00 M)
+2020-04-28 17:46:13 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: PS Eden Space (type Heap memory) = 684720128 (653.00 M)
+2020-04-28 17:46:13 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: PS Survivor Space (type Heap memory) = 9961472 (9.50 M)
+2020-04-28 17:46:13 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: PS Old Gen (type Heap memory) = 1412431872 (1347.00 M)
+2020-04-28 17:46:13 [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Starting...
+2020-04-28 17:46:14 [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Start completed.
+2020-04-28 17:46:14 [Thread-14] INFO  com.face.nd.service.EquipmentService -设备信息:一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:46:14 [Thread-14] INFO  com.face.nd.service.EquipmentService -设备信息:15-192.168.1.4
+2020-04-28 17:46:14 [Thread-14] INFO  com.face.nd.service.EquipmentService -数量：2
+2020-04-28 17:46:14 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -开始查询设备状态Tue Apr 28 17:46:14 CST 2020
+2020-04-28 17:46:14 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -正在查询：1 个 15-192.168.1.4
+2020-04-28 17:46:18 [Thread-14] INFO  com.face.nd.controller.EgciController -第 1 个192.168.1.4：获取网络状态成功
+2020-04-28 17:46:19 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -已查询第：1 个 15-192.168.1.4
+2020-04-28 17:46:19 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -正在查询：2 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:46:22 [Thread-14] INFO  com.face.nd.controller.EgciController -第 2 个192.168.1.116：获取网络状态成功
+2020-04-28 17:46:22 [Thread-14] INFO  com.face.nd.timer.AlarmTimer -启用布防自动重连功能
+2020-04-28 17:46:22 [Thread-14] INFO  com.face.nd.timer.SynchronizationTimer -夜间同步时间：Tue Apr 28 12:56:00 CST 2020
+2020-04-28 17:46:22 [Thread-14] INFO  com.face.nd.controller.EgciController -开启自动同步功能
+2020-04-28 17:46:22 [Thread-14] INFO  com.face.nd.timer.SystemResetTimer -系统重置时间：Tue Apr 28 11:56:00 CST 2020
+2020-04-28 17:46:22 [Thread-14] INFO  com.face.nd.controller.EgciController -系统默认编码：GBK
+2020-04-28 17:46:22 [Thread-14] INFO  com.face.nd.controller.EgciController -系统默认字符编码：GBK
+2020-04-28 17:46:22 [Thread-14] INFO  com.face.nd.controller.EgciController -系统默认语言：zh
+2020-04-28 17:46:22 [Thread-14] INFO  com.face.nd.controller.EgciController -本机IP地址EGCI/192.168.1.6
+2020-04-28 17:46:22 [Thread-14] INFO  com.face.nd.controller.EgciController -等待客户端连接..............................................................................
+2020-04-28 17:46:23 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -已查询第：2 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:46:23 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -结束查询设备状态Tue Apr 28 17:46:23 CST 2020
+2020-04-28 17:46:25 [Thread-25] INFO  com.face.nd.timer.PingTimer -192.168.1.4:启用自动更新设备网络状态
+2020-04-28 17:46:26 [Thread-26] INFO  com.face.nd.timer.PingTimer -192.168.1.116:启用自动更新设备网络状态
+2020-04-28 17:46:59 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-28 17:46:59 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-28 17:46:59 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 8 ms
+2020-04-28 17:53:46 [main] INFO  com.face.nd.DemoApplication -Starting DemoApplication on EGCI with PID 12764 (H:\nd\webFace\target\classes started by EGCI in H:\nd\webFace)
+2020-04-28 17:53:46 [main] INFO  com.face.nd.DemoApplication -No active profile set, falling back to default profiles: default
+2020-04-28 17:53:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-04-28 17:53:49 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 132ms. Found 0 JDBC repository interfaces.
+2020-04-28 17:53:51 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-04-28 17:53:51 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-28 17:53:51 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-28 17:53:51 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-28 17:53:51 [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-04-28 17:53:51 [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-04-28 17:53:51 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-28 17:53:51 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-28 17:53:52 [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-04-28 17:53:52 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-28 17:53:52 [main] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 5716 ms
+2020-04-28 17:53:54 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-28 17:53:54 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping -Adding welcome page template: index
+2020-04-28 17:53:54 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-28 17:53:54 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-28 17:53:54 [main] INFO  com.face.nd.DemoApplication -Started DemoApplication in 9.521 seconds (JVM running for 13.697)
+2020-04-28 17:53:54 [Thread-18] INFO  com.face.nd.controller.EgciController -H:\nd\webFace
+2020-04-28 17:53:54 [Thread-18] INFO  com.face.nd.controller.EgciController -进程id：12764
+2020-04-28 17:53:54 [Thread-18] INFO  com.face.nd.controller.EgciController -Runtime max: 1883242496 (1796.00 M)
+2020-04-28 17:53:54 [Thread-18] INFO  com.face.nd.controller.EgciController -Non-heap: -1 (-0.00 M)
+2020-04-28 17:53:54 [Thread-18] INFO  com.face.nd.controller.EgciController -Heap: 1883242496 (1796.00 M)
+2020-04-28 17:53:54 [Thread-18] INFO  com.face.nd.controller.EgciController -Pool: Code Cache (type Non-heap memory) = 251658240 (240.00 M)
+2020-04-28 17:53:54 [Thread-18] INFO  com.face.nd.controller.EgciController -Pool: Metaspace (type Non-heap memory) = -1 (-0.00 M)
+2020-04-28 17:53:54 [Thread-18] INFO  com.face.nd.controller.EgciController -Pool: Compressed Class Space (type Non-heap memory) = 1073741824 (1024.00 M)
+2020-04-28 17:53:54 [Thread-18] INFO  com.face.nd.controller.EgciController -Pool: PS Eden Space (type Heap memory) = 685244416 (653.50 M)
+2020-04-28 17:53:54 [Thread-18] INFO  com.face.nd.controller.EgciController -Pool: PS Survivor Space (type Heap memory) = 9437184 (9.00 M)
+2020-04-28 17:53:54 [Thread-18] INFO  com.face.nd.controller.EgciController -Pool: PS Old Gen (type Heap memory) = 1412431872 (1347.00 M)
+2020-04-28 17:53:55 [Thread-18] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Starting...
+2020-04-28 17:53:58 [Thread-18] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Start completed.
+2020-04-28 17:53:59 [Thread-18] INFO  com.face.nd.service.EquipmentService -设备信息:一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:53:59 [Thread-18] INFO  com.face.nd.service.EquipmentService -设备信息:15-192.168.1.4
+2020-04-28 17:53:59 [Thread-18] INFO  com.face.nd.service.EquipmentService -数量：2
+2020-04-28 17:53:59 [Thread-12] INFO  com.face.nd.service.EquipmentStatusService -开始查询设备状态Tue Apr 28 17:53:59 CST 2020
+2020-04-28 17:53:59 [Thread-12] INFO  com.face.nd.service.EquipmentStatusService -正在查询：1 个 15-192.168.1.4
+2020-04-28 17:54:02 [Thread-18] INFO  com.face.nd.controller.EgciController -第 1 个192.168.1.4：获取网络状态成功
+2020-04-28 17:54:05 [Thread-18] INFO  com.face.nd.controller.EgciController -第 2 个192.168.1.116：获取网络状态成功
+2020-04-28 17:54:05 [Thread-18] INFO  com.face.nd.timer.AlarmTimer -启用布防自动重连功能
+2020-04-28 17:54:05 [Thread-18] INFO  com.face.nd.timer.SynchronizationTimer -夜间同步时间：Tue Apr 28 12:56:00 CST 2020
+2020-04-28 17:54:05 [Thread-18] INFO  com.face.nd.controller.EgciController -开启自动同步功能
+2020-04-28 17:54:05 [Thread-18] INFO  com.face.nd.timer.SystemResetTimer -系统重置时间：Tue Apr 28 11:56:00 CST 2020
+2020-04-28 17:54:05 [Thread-18] INFO  com.face.nd.controller.EgciController -系统默认编码：GBK
+2020-04-28 17:54:05 [Thread-18] INFO  com.face.nd.controller.EgciController -系统默认字符编码：GBK
+2020-04-28 17:54:05 [Thread-18] INFO  com.face.nd.controller.EgciController -系统默认语言：zh
+2020-04-28 17:54:05 [Thread-18] INFO  com.face.nd.controller.EgciController -本机IP地址EGCI/192.168.1.6
+2020-04-28 17:54:05 [Thread-18] INFO  com.face.nd.controller.EgciController -等待客户端连接..............................................................................
+2020-04-28 17:54:06 [Thread-12] INFO  com.face.nd.service.EquipmentStatusService -已查询第：1 个 15-192.168.1.4
+2020-04-28 17:54:06 [Thread-12] INFO  com.face.nd.service.EquipmentStatusService -正在查询：2 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:54:11 [Thread-12] INFO  com.face.nd.service.EquipmentStatusService -已查询第：2 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:54:11 [Thread-12] INFO  com.face.nd.service.EquipmentStatusService -结束查询设备状态Tue Apr 28 17:54:11 CST 2020
+2020-04-28 17:54:12 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-28 17:54:12 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-28 17:54:12 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 17 ms
+2020-04-28 17:54:12 [Thread-29] INFO  com.face.nd.timer.PingTimer -192.168.1.4:启用自动更新设备网络状态
+2020-04-28 17:54:14 [Thread-30] INFO  com.face.nd.timer.PingTimer -192.168.1.116:启用自动更新设备网络状态
+2020-04-28 17:56:54 [main] INFO  com.face.nd.DemoApplication -Starting DemoApplication on EGCI with PID 7432 (H:\nd\webFace\target\classes started by EGCI in H:\nd\webFace)
+2020-04-28 17:56:54 [main] INFO  com.face.nd.DemoApplication -No active profile set, falling back to default profiles: default
+2020-04-28 17:56:56 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-04-28 17:56:56 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 72ms. Found 0 JDBC repository interfaces.
+2020-04-28 17:56:56 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-04-28 17:56:56 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-28 17:56:56 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-28 17:56:56 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-28 17:56:56 [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-04-28 17:56:56 [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-04-28 17:56:56 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-28 17:56:56 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-28 17:56:58 [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-04-28 17:56:58 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-28 17:56:58 [main] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3872 ms
+2020-04-28 17:56:59 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-28 17:56:59 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping -Adding welcome page template: index
+2020-04-28 17:56:59 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-28 17:56:59 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-28 17:56:59 [main] INFO  com.face.nd.DemoApplication -Started DemoApplication in 6.871 seconds (JVM running for 9.945)
+2020-04-28 17:56:59 [Thread-19] INFO  com.face.nd.controller.EgciController -H:\nd\webFace
+2020-04-28 17:56:59 [Thread-19] INFO  com.face.nd.controller.EgciController -进程id：7432
+2020-04-28 17:56:59 [Thread-19] INFO  com.face.nd.controller.EgciController -Runtime max: 1883242496 (1796.00 M)
+2020-04-28 17:56:59 [Thread-19] INFO  com.face.nd.controller.EgciController -Non-heap: -1 (-0.00 M)
+2020-04-28 17:56:59 [Thread-19] INFO  com.face.nd.controller.EgciController -Heap: 1883242496 (1796.00 M)
+2020-04-28 17:56:59 [Thread-19] INFO  com.face.nd.controller.EgciController -Pool: Code Cache (type Non-heap memory) = 251658240 (240.00 M)
+2020-04-28 17:56:59 [Thread-19] INFO  com.face.nd.controller.EgciController -Pool: Metaspace (type Non-heap memory) = -1 (-0.00 M)
+2020-04-28 17:56:59 [Thread-19] INFO  com.face.nd.controller.EgciController -Pool: Compressed Class Space (type Non-heap memory) = 1073741824 (1024.00 M)
+2020-04-28 17:56:59 [Thread-19] INFO  com.face.nd.controller.EgciController -Pool: PS Eden Space (type Heap memory) = 684720128 (653.00 M)
+2020-04-28 17:56:59 [Thread-19] INFO  com.face.nd.controller.EgciController -Pool: PS Survivor Space (type Heap memory) = 9961472 (9.50 M)
+2020-04-28 17:56:59 [Thread-19] INFO  com.face.nd.controller.EgciController -Pool: PS Old Gen (type Heap memory) = 1412431872 (1347.00 M)
+2020-04-28 17:56:59 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Starting...
+2020-04-28 17:57:01 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Start completed.
+2020-04-28 17:57:01 [Thread-19] INFO  com.face.nd.service.EquipmentService -设备信息:一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:57:01 [Thread-19] INFO  com.face.nd.service.EquipmentService -设备信息:15-192.168.1.4
+2020-04-28 17:57:01 [Thread-19] INFO  com.face.nd.service.EquipmentService -数量：2
+2020-04-28 17:57:01 [Thread-13] INFO  com.face.nd.service.EquipmentStatusService -开始查询设备状态Tue Apr 28 17:57:01 CST 2020
+2020-04-28 17:57:01 [Thread-13] INFO  com.face.nd.service.EquipmentStatusService -正在查询：1 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:57:05 [Thread-19] INFO  com.face.nd.controller.EgciController -第 1 个192.168.1.116：获取网络状态成功
+2020-04-28 17:57:06 [Thread-13] INFO  com.face.nd.service.EquipmentStatusService -已查询第：1 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 17:57:06 [Thread-13] INFO  com.face.nd.service.EquipmentStatusService -正在查询：2 个 15-192.168.1.4
+2020-04-28 17:57:09 [Thread-19] INFO  com.face.nd.controller.EgciController -第 2 个192.168.1.4：获取网络状态成功
+2020-04-28 17:57:09 [Thread-19] INFO  com.face.nd.timer.AlarmTimer -启用布防自动重连功能
+2020-04-28 17:57:09 [Thread-19] INFO  com.face.nd.timer.SynchronizationTimer -夜间同步时间：Tue Apr 28 12:56:00 CST 2020
+2020-04-28 17:57:09 [Thread-19] INFO  com.face.nd.controller.EgciController -开启自动同步功能
+2020-04-28 17:57:09 [Thread-19] INFO  com.face.nd.timer.SystemResetTimer -系统重置时间：Tue Apr 28 11:56:00 CST 2020
+2020-04-28 17:57:09 [Thread-19] INFO  com.face.nd.controller.EgciController -系统默认编码：GBK
+2020-04-28 17:57:09 [Thread-19] INFO  com.face.nd.controller.EgciController -系统默认字符编码：GBK
+2020-04-28 17:57:09 [Thread-19] INFO  com.face.nd.controller.EgciController -系统默认语言：zh
+2020-04-28 17:57:09 [Thread-19] INFO  com.face.nd.controller.EgciController -本机IP地址EGCI/192.168.1.6
+2020-04-28 17:57:09 [Thread-19] INFO  com.face.nd.controller.EgciController -等待客户端连接..............................................................................
+2020-04-28 17:57:10 [Thread-13] INFO  com.face.nd.service.EquipmentStatusService -已查询第：2 个 15-192.168.1.4
+2020-04-28 17:57:10 [Thread-13] INFO  com.face.nd.service.EquipmentStatusService -结束查询设备状态Tue Apr 28 17:57:10 CST 2020
+2020-04-28 17:57:11 [Thread-30] INFO  com.face.nd.timer.PingTimer -192.168.1.116:启用自动更新设备网络状态
+2020-04-28 17:57:13 [Thread-31] INFO  com.face.nd.timer.PingTimer -192.168.1.4:启用自动更新设备网络状态
+2020-04-28 17:57:37 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-28 17:57:37 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-28 17:57:37 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 11 ms
+2020-04-28 18:02:55 [main] INFO  com.face.nd.DemoApplication -Starting DemoApplication on EGCI with PID 812 (H:\nd\webFace\target\classes started by EGCI in H:\nd\webFace)
+2020-04-28 18:02:55 [main] INFO  com.face.nd.DemoApplication -No active profile set, falling back to default profiles: default
+2020-04-28 18:02:56 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-04-28 18:02:56 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 40ms. Found 0 JDBC repository interfaces.
+2020-04-28 18:02:56 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-04-28 18:02:56 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-28 18:02:56 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-04-28 18:02:56 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-28 18:02:56 [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-04-28 18:02:56 [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-04-28 18:02:56 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-28 18:02:56 [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-28 18:02:57 [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-04-28 18:02:57 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-04-28 18:02:57 [main] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2667 ms
+2020-04-28 18:02:58 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-28 18:02:58 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping -Adding welcome page template: index
+2020-04-28 18:02:59 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-04-28 18:02:59 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-28 18:02:59 [main] INFO  com.face.nd.DemoApplication -Started DemoApplication in 4.556 seconds (JVM running for 6.31)
+2020-04-28 18:02:59 [Thread-14] INFO  com.face.nd.controller.EgciController -H:\nd\webFace
+2020-04-28 18:02:59 [Thread-14] INFO  com.face.nd.controller.EgciController -进程id：812
+2020-04-28 18:02:59 [Thread-14] INFO  com.face.nd.controller.EgciController -Runtime max: 1883242496 (1796.00 M)
+2020-04-28 18:02:59 [Thread-14] INFO  com.face.nd.controller.EgciController -Non-heap: -1 (-0.00 M)
+2020-04-28 18:02:59 [Thread-14] INFO  com.face.nd.controller.EgciController -Heap: 1883242496 (1796.00 M)
+2020-04-28 18:02:59 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: Code Cache (type Non-heap memory) = 251658240 (240.00 M)
+2020-04-28 18:02:59 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: Metaspace (type Non-heap memory) = -1 (-0.00 M)
+2020-04-28 18:02:59 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: Compressed Class Space (type Non-heap memory) = 1073741824 (1024.00 M)
+2020-04-28 18:02:59 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: PS Eden Space (type Heap memory) = 684720128 (653.00 M)
+2020-04-28 18:02:59 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: PS Survivor Space (type Heap memory) = 9961472 (9.50 M)
+2020-04-28 18:02:59 [Thread-14] INFO  com.face.nd.controller.EgciController -Pool: PS Old Gen (type Heap memory) = 1412431872 (1347.00 M)
+2020-04-28 18:02:59 [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Starting...
+2020-04-28 18:03:00 [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource -FaceRecognition - Start completed.
+2020-04-28 18:03:00 [Thread-14] INFO  com.face.nd.service.EquipmentService -设备信息:一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 18:03:00 [Thread-14] INFO  com.face.nd.service.EquipmentService -设备信息:15-192.168.1.4
+2020-04-28 18:03:00 [Thread-14] INFO  com.face.nd.service.EquipmentService -数量：2
+2020-04-28 18:03:00 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -开始查询设备状态Tue Apr 28 18:03:00 CST 2020
+2020-04-28 18:03:00 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -正在查询：1 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 18:03:01 [Thread-14] INFO  com.face.nd.controller.EgciController -第 1 个192.168.1.116：获取网络状态成功
+2020-04-28 18:03:03 [Thread-14] INFO  com.face.nd.controller.EgciController -第 2 个192.168.1.4：获取网络状态成功
+2020-04-28 18:03:03 [Thread-14] INFO  com.face.nd.timer.AlarmTimer -启用布防自动重连功能
+2020-04-28 18:03:03 [Thread-14] INFO  com.face.nd.timer.SynchronizationTimer -夜间同步时间：Tue Apr 28 12:56:00 CST 2020
+2020-04-28 18:03:03 [Thread-14] INFO  com.face.nd.controller.EgciController -开启自动同步功能
+2020-04-28 18:03:03 [Thread-14] INFO  com.face.nd.timer.SystemResetTimer -系统重置时间：Tue Apr 28 11:56:00 CST 2020
+2020-04-28 18:03:03 [Thread-14] INFO  com.face.nd.controller.EgciController -系统默认编码：GBK
+2020-04-28 18:03:03 [Thread-14] INFO  com.face.nd.controller.EgciController -系统默认字符编码：GBK
+2020-04-28 18:03:03 [Thread-14] INFO  com.face.nd.controller.EgciController -系统默认语言：zh
+2020-04-28 18:03:03 [Thread-14] INFO  com.face.nd.controller.EgciController -本机IP地址EGCI/192.168.1.6
+2020-04-28 18:03:03 [Thread-14] INFO  com.face.nd.controller.EgciController -等待客户端连接..............................................................................
+2020-04-28 18:03:07 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -已查询第：1 个 一核 DTB/TC旋转门-192.168.1.116
+2020-04-28 18:03:07 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -正在查询：2 个 15-192.168.1.4
+2020-04-28 18:03:12 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -已查询第：2 个 15-192.168.1.4
+2020-04-28 18:03:12 [Thread-9] INFO  com.face.nd.service.EquipmentStatusService -结束查询设备状态Tue Apr 28 18:03:12 CST 2020
+2020-04-28 18:03:13 [Thread-25] INFO  com.face.nd.timer.PingTimer -192.168.1.116:启用自动更新设备网络状态
+2020-04-28 18:03:15 [Thread-26] INFO  com.face.nd.timer.PingTimer -192.168.1.4:启用自动更新设备网络状态
+2020-04-28 18:03:21 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-28 18:03:21 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-04-28 18:03:21 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 8 ms
+2020-04-28 18:11:03 [Timer-2] INFO  com.face.nd.service.NTPTimeSynchronizationService -192.168.29.35
+2020-04-28 18:11:06 [Timer-2] INFO  com.face.nd.service.NTPTimeSynchronizationService -时间：2020-04-28 18:11:06
+2020-04-28 18:11:06 [Timer-2] INFO  com.face.nd.service.NTPTimeSynchronizationService -同步成功

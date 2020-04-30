@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "config/mybatis-3-mapper.dtd">
+<mapper namespace="com.face.nd.dao.AlarmDao">
+    <!--更新进程id-->
+    <insert id="addAlarm" parameterType="com.face.nd.entity.AlarmEntity" useGeneratedKeys="true"
+            keyProperty="alarmId" flushCache="true">
+        INSERT INTO
+        AlarmTable
+        (alarmName,alarmType,alarmEquipmentName,alarmPermission)
+        values
+        (#{alarmName},#{alarmType},#{alarmEquipmentName},#{alarmPermission});
+    </insert>
+</mapper>

@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    name: FaceRecognition
+    #        url: jdbc:sqlserver://localhost:1433;DatabaseName=FaceRecognition
+    #        username: dyw
+    url: jdbc:sqlserver://localhost:51178;DatabaseName=FaceRecognition
+    username: sa
+    password: hik12345
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+  spring:
+    thymeleaf:
+      cache=false:

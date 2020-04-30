@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "config/mybatis-3-mapper.dtd">
+<mapper namespace="com.face.nd.dao.PassRecordDao">
+    <!-- 插入一个报警 -->
+    <insert id="insertAlarm" parameterType="com.face.nd.entity.PassRecordEntity" useGeneratedKeys="true"
+            keyProperty="passRecordId">
+        INSERT INTO
+        PassRecordTable
+        (passRecordName,passRecordCardNumber,passRecordStaffImage,passRecordCaptureImage,passRecordPassTime,passRecordEquipmentName,passRecordEquipmentIp,passRecordPassResult,passRecordNote,passRecordSimilarity,passRecordEventTypeId)
+        values
+        (#{passRecordName},#{passRecordCardNumber},#{passRecordStaffImage},#{passRecordCaptureImage},#{passRecordPassTime},#{passRecordEquipmentName},#{passRecordEquipmentIp},#{passRecordPassResult},#{passRecordNote},#{passRecordSimilarity},#{passRecordEventTypeId});
+    </insert>
+</mapper>
